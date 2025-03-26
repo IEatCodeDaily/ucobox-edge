@@ -45,7 +45,7 @@ fi
 
 # Start the services
 echo "Starting Docker Compose..."
-docker-compose up -d
+docker compose up -d
 
 echo "Setup complete!"
 echo "- Access Node-RED at http://localhost:1880"
