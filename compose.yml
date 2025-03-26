@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red
+    restart: unless-stopped
+    user: "1000:1000" # Use Pi user's UID:GID for permissions
+    volumes:
+      - ./node-red-data:/data
+    ports:
+      - "1880:1880"
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0 # Assuming USB UART adapter is at ttyUSB0
+    environment:
+      - TZ=UTC
+    networks:
+      - iot-network
+    depends_on:
+      - mosquitto
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    volumes:
+      - ./mosquitto-config:/mosquitto/config
+      - ./mosquitto-data:/mosquitto/data
+      - ./mosquitto-log:/mosquitto/log
+    ports:
+      - "1883:1883" # MQTT
+      - "9001:9001" # WebSockets
+    networks:
+      - iot-network
+
+  mqtt-dashboard:
+    image: emqx/mqttx-web:latest
+    container_name: mqtt-dashboard
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - iot-network
+    depends_on:
+      - mosquitto
+
+networks:
+  iot-network:
+    driver: bridge
