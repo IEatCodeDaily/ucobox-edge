@@ -23,6 +23,7 @@ services:
     image: eclipse-mosquitto:latest
     container_name: mosquitto
     restart: unless-stopped
+    user: "1000:1000" # Use Pi user's UID:GID for permissions
     volumes:
       - ./mosquitto-config:/mosquitto/config
       - ./mosquitto-data:/mosquitto/data

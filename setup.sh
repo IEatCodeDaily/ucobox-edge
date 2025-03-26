@@ -26,8 +26,10 @@ allow_anonymous true
 EOL
 
 # Set permissions
-sudo chown -R 1883:1883 mosquitto-data
-sudo chown -R 1883:1883 mosquitto-log
+sudo chown -R 1000:1000 mosquitto-data
+sudo chown -R 1000:1000 mosquitto-log
+sudo chown -R 1000:1000 node-red-data
+sudo chown -R 1000:1000 mosquitto-config
 
 # Ensure the USB device is accessible
 # Find the USB device (adjust if your device is not ttyUSB0)
