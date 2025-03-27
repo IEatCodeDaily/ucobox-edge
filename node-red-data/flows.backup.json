@@ -1,0 +1,313 @@
+[
+    {
+        "id": "94a98b57e5e0657e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "rs485-serial-config",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "2edc56afbc33329d",
+        "type": "mqtt-broker",
+        "name": "Mosquitto-Local",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "15e99441fc93f314",
+        "type": "modbus-client",
+        "name": "USB Serial to RS485",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "rs485-receive",
+        "type": "serial in",
+        "z": "94a98b57e5e0657e",
+        "name": "RS485 Receive",
+        "serial": "rs485-serial-config",
+        "x": 380,
+        "y": 540,
+        "wires": [
+            [
+                "rs485-decode",
+                "rs485-debug"
+            ]
+        ]
+    },
+    {
+        "id": "rs485-decode",
+        "type": "function",
+        "z": "94a98b57e5e0657e",
+        "name": "Decode RS485 Data",
+        "func": "// Convert the buffer to a string if needed\nif (Buffer.isBuffer(msg.payload)) {\n    msg.payload = msg.payload.toString('hex');\n}\n\n// You might need to parse the data based on your device protocol\n// Example: split by commas\n// msg.payload = msg.payload.split(',');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [
+                "rs485-mqtt"
+            ]
+        ]
+    },
+    {
+        "id": "rs485-debug",
+        "type": "debug",
+        "z": "94a98b57e5e0657e",
+        "name": "Debug Raw Data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "mqtt-input",
+        "type": "mqtt in",
+        "z": "94a98b57e5e0657e",
+        "name": "Subscribe to Commands",
+        "topic": "rs485/command",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "2edc56afbc33329d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "rs485-transmit"
+            ]
+        ]
+    },
+    {
+        "id": "rs485-transmit",
+        "type": "serial out",
+        "z": "94a98b57e5e0657e",
+        "name": "RS485 Transmit",
+        "serial": "rs485-serial-config",
+        "x": 680,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "rs485-command",
+        "type": "inject",
+        "z": "94a98b57e5e0657e",
+        "name": "Test Command",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "01030000000AC5CD",
+        "payloadType": "str",
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "rs485-transmit"
+            ]
+        ]
+    },
+    {
+        "id": "806ba823759cfc28",
+        "type": "inject",
+        "z": "94a98b57e5e0657e",
+        "name": "Test Publish",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "test",
+        "payload": "Test",
+        "payloadType": "str",
+        "x": 370,
+        "y": 860,
+        "wires": [
+            [
+                "4a388bbbfb84c1db"
+            ]
+        ]
+    },
+    {
+        "id": "4a388bbbfb84c1db",
+        "type": "mqtt out",
+        "z": "94a98b57e5e0657e",
+        "name": "Publish to MQTT",
+        "topic": "test/test",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2edc56afbc33329d",
+        "x": 570,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "0a7365653deeed1c",
+        "type": "modbus-read",
+        "z": "94a98b57e5e0657e",
+        "name": "Read LED",
+        "topic": "LED",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "15e99441fc93f314",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "8c25546b66e28d34"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "rs485-mqtt",
+        "type": "mqtt out",
+        "z": "94a98b57e5e0657e",
+        "name": "Publish to MQTT",
+        "topic": "rs485/data",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2edc56afbc33329d",
+        "x": 870,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8c25546b66e28d34",
+        "type": "mqtt out",
+        "z": "94a98b57e5e0657e",
+        "name": "Publish to MQTT",
+        "topic": "rs485/data",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2edc56afbc33329d",
+        "x": 610,
+        "y": 420,
+        "wires": []
+    }
+]

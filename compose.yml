@@ -2,7 +2,7 @@ version: '3'
 
 services:
   node-red:
-    image: nodered/node-red:latest
+    image: nodered/node-red:latest-debian
     container_name: node-red
     restart: unless-stopped
     user: "1000:1000" # Use Pi user's UID:GID for permissions

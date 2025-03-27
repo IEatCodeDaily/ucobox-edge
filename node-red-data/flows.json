@@ -1,0 +1,235 @@
+[
+    {
+        "id": "f5dcf66848698924",
+        "type": "tab",
+        "label": "Slave 1",
+        "disabled": false,
+        "info": "Slave 1 acquisition flow\r\n",
+        "env": []
+    },
+    {
+        "id": "50e63d0e668d4211",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": true,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "115200",
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "",
+        "commandDelay": "0",
+        "clientTimeout": 2000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "f23c53b47dfbe38f",
+        "type": "modbus-read",
+        "z": "f5dcf66848698924",
+        "name": "read led",
+        "topic": "test",
+        "showStatusActivities": true,
+        "logIOActivities": false,
+        "showErrors": true,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "0",
+        "quantity": "1",
+        "rate": "100",
+        "rateUnit": "ms",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "50e63d0e668d4211",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "2ad946f4d14e39ec"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2ad946f4d14e39ec",
+        "type": "debug",
+        "z": "f5dcf66848698924",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "53fddc862f5adfa1",
+        "type": "modbus-write",
+        "z": "f5dcf66848698924",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "0",
+        "quantity": "1",
+        "server": "50e63d0e668d4211",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1bdfa9370ee78d36",
+        "type": "inject",
+        "z": "f5dcf66848698924",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 550,
+        "y": 620,
+        "wires": [
+            [
+                "53fddc862f5adfa1"
+            ]
+        ]
+    },
+    {
+        "id": "faa7e5e218a9e8b2",
+        "type": "inject",
+        "z": "f5dcf66848698924",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "53fddc862f5adfa1"
+            ]
+        ]
+    },
+    {
+        "id": "8a144efb08d501cf",
+        "type": "modbus-read",
+        "z": "f5dcf66848698924",
+        "name": "read thresh + firmware",
+        "topic": "test",
+        "showStatusActivities": true,
+        "logIOActivities": false,
+        "showErrors": true,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "0",
+        "quantity": "2",
+        "rate": "100",
+        "rateUnit": "ms",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "50e63d0e668d4211",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "2ad946f4d14e39ec"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cbd250399b286336",
+        "type": "modbus-read",
+        "z": "f5dcf66848698924",
+        "name": "read MQ2",
+        "topic": "test",
+        "showStatusActivities": true,
+        "logIOActivities": false,
+        "showErrors": true,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "1",
+        "rate": "100",
+        "rateUnit": "ms",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "50e63d0e668d4211",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "2ad946f4d14e39ec"
+            ],
+            []
+        ]
+    }
+]

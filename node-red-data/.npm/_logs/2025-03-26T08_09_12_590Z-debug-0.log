@@ -1,0 +1,1019 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-contrib-serialport-rs485@0.0.6
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-contrib-serialport-rs485@0.0.6"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-03-26T08_09_12_590Z-
+10 verbose logfile /data/.npm/_logs/2025-03-26T08_09_12_590Z-debug-0.log
+11 silly packumentCache heap:2038431744 maxSize:509607936 maxEntrySize:254803968
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest node-red-contrib-serialport-rs485@0.0.6
+15 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-serialport-rs485 cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-serialport-rs485 3514ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-serialport-rs485 set size:undefined disposed:false
+18 silly placeDep ROOT node-red-contrib-serialport-rs485@0.0.6 OK for: node-red-project@0.0.1 want: 0.0.6
+19 silly fetch manifest serialport@~4.0.7
+20 silly packumentCache full:https://registry.npmjs.org/serialport cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/serialport 751ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/serialport set size:undefined disposed:false
+23 silly placeDep ROOT serialport@4.0.7 OK for: node-red-contrib-serialport-rs485@0.0.6 want: ~4.0.7
+24 silly fetch manifest lie@^3.1.0
+25 silly packumentCache full:https://registry.npmjs.org/lie cache-miss
+26 silly fetch manifest nan@^2.4.0
+27 silly packumentCache full:https://registry.npmjs.org/nan cache-miss
+28 silly fetch manifest debug@^2.3.2
+29 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/lie 98ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/lie set size:undefined disposed:false
+32 silly fetch manifest bindings@1.2.1
+33 silly packumentCache full:https://registry.npmjs.org/bindings cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/bindings 88ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/bindings set size:undefined disposed:false
+36 silly fetch manifest commander@^2.9.0
+37 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/nan 226ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/nan set size:undefined disposed:false
+40 silly fetch manifest object.assign@^4.0.3
+41 silly packumentCache full:https://registry.npmjs.org/object.assign cache-miss
+42 http fetch GET 200 https://registry.npmjs.org/debug 240ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/debug set size:undefined disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/object.assign 80ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/object.assign set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/commander 130ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/commander set size:undefined disposed:false
+48 silly placeDep ROOT bindings@1.2.1 OK for: serialport@4.0.7 want: 1.2.1
+49 silly placeDep ROOT commander@2.20.3 OK for: serialport@4.0.7 want: ^2.9.0
+50 silly placeDep ROOT debug@2.6.9 OK for: serialport@4.0.7 want: ^2.3.2
+51 silly placeDep ROOT lie@3.3.0 OK for: serialport@4.0.7 want: ^3.1.0
+52 silly placeDep ROOT nan@2.22.2 OK for: serialport@4.0.7 want: ^2.4.0
+53 silly placeDep ROOT object.assign@4.1.7 OK for: serialport@4.0.7 want: ^4.0.3
+54 silly fetch manifest ms@2.0.0
+55 silly packumentCache full:https://registry.npmjs.org/ms cache-miss
+56 silly fetch manifest immediate@~3.0.5
+57 silly packumentCache full:https://registry.npmjs.org/immediate cache-miss
+58 silly fetch manifest call-bind@^1.0.8
+59 silly packumentCache full:https://registry.npmjs.org/call-bind cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/ms 79ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/ms set size:undefined disposed:false
+62 silly fetch manifest call-bound@^1.0.3
+63 silly packumentCache full:https://registry.npmjs.org/call-bound cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/call-bind 93ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/call-bind set size:undefined disposed:false
+66 silly fetch manifest define-properties@^1.2.1
+67 silly packumentCache full:https://registry.npmjs.org/define-properties cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/immediate 103ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/immediate set size:undefined disposed:false
+70 silly fetch manifest es-object-atoms@^1.0.0
+71 silly packumentCache full:https://registry.npmjs.org/es-object-atoms cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/call-bound 48ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/call-bound set size:undefined disposed:false
+74 silly fetch manifest has-symbols@^1.1.0
+75 silly packumentCache full:https://registry.npmjs.org/has-symbols cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/es-object-atoms 52ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/es-object-atoms set size:undefined disposed:false
+78 silly fetch manifest object-keys@^1.1.1
+79 silly packumentCache full:https://registry.npmjs.org/object-keys cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/define-properties 81ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/define-properties set size:undefined disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/has-symbols 50ms (cache miss)
+83 silly packumentCache full:https://registry.npmjs.org/has-symbols set size:undefined disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/object-keys 44ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/object-keys set size:undefined disposed:false
+86 silly placeDep ROOT ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+87 silly placeDep ROOT immediate@3.0.6 OK for: lie@3.3.0 want: ~3.0.5
+88 silly placeDep ROOT call-bind@1.0.8 OK for: object.assign@4.1.7 want: ^1.0.8
+89 silly placeDep ROOT call-bound@1.0.4 OK for: object.assign@4.1.7 want: ^1.0.3
+90 silly placeDep ROOT define-properties@1.2.1 OK for: object.assign@4.1.7 want: ^1.2.1
+91 silly placeDep ROOT es-object-atoms@1.1.1 OK for: object.assign@4.1.7 want: ^1.0.0
+92 silly placeDep ROOT has-symbols@1.1.0 OK for: object.assign@4.1.7 want: ^1.1.0
+93 silly placeDep ROOT object-keys@1.1.1 OK for: object.assign@4.1.7 want: ^1.1.1
+94 silly fetch manifest call-bind-apply-helpers@^1.0.0
+95 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers cache-miss
+96 silly fetch manifest es-define-property@^1.0.0
+97 silly packumentCache full:https://registry.npmjs.org/es-define-property cache-miss
+98 silly fetch manifest get-intrinsic@^1.2.4
+99 silly packumentCache full:https://registry.npmjs.org/get-intrinsic cache-miss
+100 http fetch GET 200 https://registry.npmjs.org/es-define-property 64ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/es-define-property set size:undefined disposed:false
+102 silly fetch manifest set-function-length@^1.2.2
+103 silly packumentCache full:https://registry.npmjs.org/set-function-length cache-miss
+104 http fetch GET 200 https://registry.npmjs.org/call-bind-apply-helpers 71ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers set size:undefined disposed:false
+106 silly fetch manifest call-bind-apply-helpers@^1.0.2
+107 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers cache-miss
+108 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 79ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/get-intrinsic set size:undefined disposed:false
+110 silly fetch manifest get-intrinsic@^1.3.0
+111 silly packumentCache full:https://registry.npmjs.org/get-intrinsic cache-miss
+112 http fetch GET 200 https://registry.npmjs.org/call-bind-apply-helpers 33ms (cache hit)
+113 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers set size:12744 disposed:false
+114 silly fetch manifest define-data-property@^1.0.1
+115 silly packumentCache full:https://registry.npmjs.org/define-data-property cache-miss
+116 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 41ms (cache hit)
+117 silly packumentCache full:https://registry.npmjs.org/get-intrinsic set size:57687 disposed:false
+118 silly fetch manifest has-property-descriptors@^1.0.0
+119 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors cache-miss
+120 http fetch GET 200 https://registry.npmjs.org/set-function-length 72ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/set-function-length set size:undefined disposed:false
+122 silly fetch manifest es-errors@^1.3.0
+123 silly packumentCache full:https://registry.npmjs.org/es-errors cache-miss
+124 http fetch GET 200 https://registry.npmjs.org/define-data-property 52ms (cache miss)
+125 silly packumentCache full:https://registry.npmjs.org/define-data-property set size:undefined disposed:false
+126 http fetch GET 200 https://registry.npmjs.org/es-errors 53ms (cache miss)
+127 silly packumentCache full:https://registry.npmjs.org/es-errors set size:undefined disposed:false
+128 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 726ms (cache miss)
+129 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors set size:undefined disposed:false
+130 silly placeDep ROOT call-bind-apply-helpers@1.0.2 OK for: call-bind@1.0.8 want: ^1.0.0
+131 silly placeDep ROOT es-define-property@1.0.1 OK for: call-bind@1.0.8 want: ^1.0.0
+132 silly placeDep ROOT get-intrinsic@1.3.0 OK for: call-bind@1.0.8 want: ^1.2.4
+133 silly placeDep ROOT set-function-length@1.2.2 OK for: call-bind@1.0.8 want: ^1.2.2
+134 silly fetch manifest function-bind@^1.1.2
+135 silly packumentCache full:https://registry.npmjs.org/function-bind cache-miss
+136 silly fetch manifest function-bind@^1.1.2
+137 silly packumentCache full:https://registry.npmjs.org/function-bind cache-miss
+138 silly fetch manifest get-proto@^1.0.1
+139 silly packumentCache full:https://registry.npmjs.org/get-proto cache-miss
+140 http fetch GET 200 https://registry.npmjs.org/function-bind 57ms (cache miss)
+141 silly packumentCache full:https://registry.npmjs.org/function-bind set size:undefined disposed:false
+142 silly fetch manifest gopd@^1.2.0
+143 silly packumentCache full:https://registry.npmjs.org/gopd cache-miss
+144 http fetch GET 200 https://registry.npmjs.org/get-proto 64ms (cache miss)
+145 silly packumentCache full:https://registry.npmjs.org/get-proto set size:undefined disposed:false
+146 silly fetch manifest hasown@^2.0.2
+147 silly packumentCache full:https://registry.npmjs.org/hasown cache-miss
+148 http fetch GET 200 https://registry.npmjs.org/function-bind 93ms (cache miss)
+149 silly packumentCache full:https://registry.npmjs.org/function-bind set size:undefined disposed:false
+150 silly fetch manifest math-intrinsics@^1.1.0
+151 silly packumentCache full:https://registry.npmjs.org/math-intrinsics cache-miss
+152 http fetch GET 200 https://registry.npmjs.org/hasown 76ms (cache miss)
+153 silly packumentCache full:https://registry.npmjs.org/hasown set size:undefined disposed:false
+154 silly fetch manifest define-data-property@^1.1.4
+155 silly packumentCache full:https://registry.npmjs.org/define-data-property cache-miss
+156 http fetch GET 200 https://registry.npmjs.org/gopd 92ms (cache miss)
+157 silly packumentCache full:https://registry.npmjs.org/gopd set size:undefined disposed:false
+158 silly fetch manifest gopd@^1.0.1
+159 silly packumentCache full:https://registry.npmjs.org/gopd cache-miss
+160 http fetch GET 200 https://registry.npmjs.org/math-intrinsics 66ms (cache miss)
+161 silly packumentCache full:https://registry.npmjs.org/math-intrinsics set size:undefined disposed:false
+162 silly fetch manifest has-property-descriptors@^1.0.2
+163 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors cache-miss
+164 http fetch GET 200 https://registry.npmjs.org/define-data-property 33ms (cache hit)
+165 silly packumentCache full:https://registry.npmjs.org/define-data-property set size:28048 disposed:false
+166 http fetch GET 200 https://registry.npmjs.org/gopd 30ms (cache hit)
+167 silly packumentCache full:https://registry.npmjs.org/gopd set size:11458 disposed:false
+168 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 28ms (cache hit)
+169 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors set size:12452 disposed:false
+170 silly placeDep ROOT es-errors@1.3.0 OK for: call-bind-apply-helpers@1.0.2 want: ^1.3.0
+171 silly placeDep ROOT function-bind@1.1.2 OK for: call-bind-apply-helpers@1.0.2 want: ^1.1.2
+172 silly placeDep ROOT define-data-property@1.1.4 OK for: define-properties@1.2.1 want: ^1.0.1
+173 silly placeDep ROOT has-property-descriptors@1.0.2 OK for: define-properties@1.2.1 want: ^1.0.0
+174 silly placeDep ROOT gopd@1.2.0 OK for: define-data-property@1.1.4 want: ^1.0.1
+175 silly placeDep ROOT get-proto@1.0.1 OK for: get-intrinsic@1.3.0 want: ^1.0.1
+176 silly placeDep ROOT hasown@2.0.2 OK for: get-intrinsic@1.3.0 want: ^2.0.2
+177 silly placeDep ROOT math-intrinsics@1.1.0 OK for: get-intrinsic@1.3.0 want: ^1.1.0
+178 silly fetch manifest dunder-proto@^1.0.1
+179 silly packumentCache full:https://registry.npmjs.org/dunder-proto cache-miss
+180 http fetch GET 200 https://registry.npmjs.org/dunder-proto 33ms (cache miss)
+181 silly packumentCache full:https://registry.npmjs.org/dunder-proto set size:undefined disposed:false
+182 silly placeDep ROOT dunder-proto@1.0.1 OK for: get-proto@1.0.1 want: ^1.0.1
+183 silly reify moves {}
+184 silly tarball no local data for serialport@https://registry.npmjs.org/serialport/-/serialport-4.0.7.tgz. Extracting by manifest.
+185 http fetch GET 200 https://registry.npmjs.org/serialport/-/serialport-4.0.7.tgz 2042ms (cache miss)
+186 warn deprecated serialport@4.0.7: This version is no longer supported, to receive security updates and bug fixes upgrade to the latest version.
+187 silly tarball no local data for math-intrinsics@https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz. Extracting by manifest.
+188 silly tarball no local data for hasown@https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz. Extracting by manifest.
+189 silly tarball no local data for get-proto@https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz. Extracting by manifest.
+190 silly tarball no local data for gopd@https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz. Extracting by manifest.
+191 silly tarball no local data for has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz. Extracting by manifest.
+192 silly tarball no local data for define-data-property@https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz. Extracting by manifest.
+193 silly tarball no local data for function-bind@https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz. Extracting by manifest.
+194 silly tarball no local data for es-errors@https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz. Extracting by manifest.
+195 silly tarball no local data for set-function-length@https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz. Extracting by manifest.
+196 silly tarball no local data for get-intrinsic@https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz. Extracting by manifest.
+197 silly tarball no local data for es-define-property@https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz. Extracting by manifest.
+198 silly tarball no local data for call-bind-apply-helpers@https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz. Extracting by manifest.
+199 silly tarball no local data for object-keys@https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz. Extracting by manifest.
+200 silly tarball no local data for has-symbols@https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz. Extracting by manifest.
+201 silly tarball no local data for es-object-atoms@https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz. Extracting by manifest.
+202 silly tarball no local data for define-properties@https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz. Extracting by manifest.
+203 silly tarball no local data for call-bound@https://registry.npmjs.org/call-bound/-/call-bound-1.0.4.tgz. Extracting by manifest.
+204 silly tarball no local data for call-bind@https://registry.npmjs.org/call-bind/-/call-bind-1.0.8.tgz. Extracting by manifest.
+205 silly tarball no local data for immediate@https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz. Extracting by manifest.
+206 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+207 silly tarball no local data for object.assign@https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz. Extracting by manifest.
+208 silly tarball no local data for nan@https://registry.npmjs.org/nan/-/nan-2.22.2.tgz. Extracting by manifest.
+209 silly tarball no local data for lie@https://registry.npmjs.org/lie/-/lie-3.3.0.tgz. Extracting by manifest.
+210 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz. Extracting by manifest.
+211 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-2.20.3.tgz. Extracting by manifest.
+212 silly tarball no local data for bindings@https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz. Extracting by manifest.
+213 silly tarball no local data for node-red-contrib-serialport-rs485@https://registry.npmjs.org/node-red-contrib-serialport-rs485/-/node-red-contrib-serialport-rs485-0.0.6.tgz. Extracting by manifest.
+214 silly tarball no local data for dunder-proto@https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz. Extracting by manifest.
+215 http fetch GET 200 https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz 960ms (cache miss)
+216 http fetch GET 200 https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz 959ms (cache miss)
+217 http fetch GET 200 https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz 967ms (cache miss)
+218 http fetch GET 200 https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz 945ms (cache miss)
+219 http fetch GET 200 https://registry.npmjs.org/call-bound/-/call-bound-1.0.4.tgz 947ms (cache miss)
+220 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 948ms (cache miss)
+221 http fetch GET 200 https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz 952ms (cache miss)
+222 http fetch GET 200 https://registry.npmjs.org/call-bind/-/call-bind-1.0.8.tgz 956ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/lie/-/lie-3.3.0.tgz 947ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.20.3.tgz 968ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz 1038ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz 1036ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz 983ms (cache miss)
+228 http fetch GET 200 https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz 1028ms (cache miss)
+229 http fetch GET 200 https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz 1049ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz 1035ms (cache miss)
+231 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 1011ms (cache miss)
+232 http fetch GET 200 https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz 1068ms (cache miss)
+233 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-serialport-rs485/-/node-red-contrib-serialport-rs485-0.0.6.tgz 1007ms (cache miss)
+234 http fetch GET 200 https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz 1037ms (cache miss)
+235 http fetch GET 200 https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz 1081ms (cache miss)
+236 http fetch GET 200 https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz 1020ms (cache miss)
+237 http fetch GET 200 https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz 1065ms (cache miss)
+238 http fetch GET 200 https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz 1087ms (cache miss)
+239 http fetch GET 200 https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz 1078ms (cache miss)
+240 http fetch GET 200 https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz 1075ms (cache miss)
+241 http fetch GET 200 https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz 1089ms (cache miss)
+242 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.22.2.tgz 1078ms (cache miss)
+243 info run serialport@4.0.7 install node_modules/serialport node-pre-gyp install --fallback-to-build
+244 info run serialport@4.0.7 install { code: 1, signal: null }
+245 verbose stack Error: command failed
+245 verbose stack     at promiseSpawn (/usr/local/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:22:22)
+245 verbose stack     at spawnWithShell (/usr/local/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:124:10)
+245 verbose stack     at promiseSpawn (/usr/local/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:12:12)
+245 verbose stack     at runScriptPkg (/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script-pkg.js:77:13)
+245 verbose stack     at runScript (/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script.js:9:12)
+245 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:329:17
+245 verbose stack     at run (/usr/local/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:67:22)
+245 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:84:9
+245 verbose stack     at new Promise (<anonymous>)
+245 verbose stack     at callLimit (/usr/local/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:35:69)
+246 verbose pkgid serialport@4.0.7
+247 error code 1
+248 error path /data/node_modules/serialport
+249 error command failed
+250 error command sh -c node-pre-gyp install --fallback-to-build
+251 error make: Entering directory '/data/node_modules/serialport/build'
+251 error   CXX(target) Release/obj.target/serialport/src/serialport.o
+251 error make: Entering directory '/data/node_modules/serialport/build'
+251 error   CXX(target) Release/obj.target/serialport/src/serialport.o
+251 error make: Leaving directory '/data/node_modules/serialport/build'
+251 error Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js build --fallback-to-build --module=/data/node_modules/serialport/build/Release/serialport.node --module_name=serialport --module_path=/data/node_modules/serialport/build/Release' (1)
+251 error make: Leaving directory '/data/node_modules/serialport/build'
+252 error node-pre-gyp info it worked if it ends with ok
+252 error node-pre-gyp info using node-pre-gyp@0.6.32
+252 error node-pre-gyp info using node@20.19.0 | linux | arm64
+252 error node-pre-gyp info check checked for "/data/node_modules/serialport/build/Release/serialport.node" (not found)
+252 error node-pre-gyp http GET https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.7/serialport-v4.0.7-node-v115-linux-arm64.tar.gz
+252 error node-pre-gyp http 404 https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.7/serialport-v4.0.7-node-v115-linux-arm64.tar.gz
+252 error node-pre-gyp ERR! Tried to download(404): https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.7/serialport-v4.0.7-node-v115-linux-arm64.tar.gz 
+252 error node-pre-gyp ERR! Pre-built binaries not found for serialport@4.0.7 and node@20.19.0 (node-v115 ABI) (falling back to source compile with node-gyp) 
+252 error node-pre-gyp http 404 status code downloading tarball https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.7/serialport-v4.0.7-node-v115-linux-arm64.tar.gz 
+252 error node-pre-gyp ERR! Tried to download(undefined): https://github.com/EmergingTechnologyAdvisors/node-serialport/releases/download/4.0.7/serialport-v4.0.7-node-v115-linux-arm64.tar.gz 
+252 error node-pre-gyp ERR! Pre-built binaries not found for serialport@4.0.7 and node@20.19.0 (node-v115 ABI) (falling back to source compile with node-gyp) 
+252 error node-pre-gyp http Connection closed while downloading tarball file 
+252 error gyp info it worked if it ends with ok
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info it worked if it ends with ok
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info ok 
+252 error gyp info ok 
+252 error gyp info it worked if it ends with ok
+252 error gyp info it worked if it ends with ok
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info find Python using Python version 3.12.9 found at "/usr/bin/python3"
+252 error gyp info find Python using Python version 3.12.9 found at "/usr/bin/python3"
+252 error gyp http GET https://nodejs.org/download/release/v20.19.0/node-v20.19.0-headers.tar.gz
+252 error gyp http GET https://nodejs.org/download/release/v20.19.0/node-v20.19.0-headers.tar.gz
+252 error gyp http 200 https://nodejs.org/download/release/v20.19.0/node-v20.19.0-headers.tar.gz
+252 error gyp http 200 https://nodejs.org/download/release/v20.19.0/node-v20.19.0-headers.tar.gz
+252 error gyp http GET https://nodejs.org/download/release/v20.19.0/SHASUMS256.txt
+252 error gyp http 200 https://nodejs.org/download/release/v20.19.0/SHASUMS256.txt
+252 error gyp info spawn /usr/bin/python3
+252 error gyp info spawn args [
+252 error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+252 error gyp info spawn args 'binding.gyp',
+252 error gyp info spawn args '-f',
+252 error gyp info spawn args 'make',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/data/node_modules/serialport/build/config.gypi',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/usr/src/node-red/.cache/node-gyp/20.19.0/include/node/common.gypi',
+252 error gyp info spawn args '-Dlibrary=shared_library',
+252 error gyp info spawn args '-Dvisibility=default',
+252 error gyp info spawn args '-Dnode_root_dir=/usr/src/node-red/.cache/node-gyp/20.19.0',
+252 error gyp info spawn args '-Dnode_gyp_dir=/usr/local/lib/node_modules/npm/node_modules/node-gyp',
+252 error gyp info spawn args '-Dnode_lib_file=/usr/src/node-red/.cache/node-gyp/20.19.0/<(target_arch)/node.lib',
+252 error gyp info spawn args '-Dmodule_root_dir=/data/node_modules/serialport',
+252 error gyp info spawn args '-Dnode_engine=v8',
+252 error gyp info spawn args '--depth=.',
+252 error gyp info spawn args '--no-parallel',
+252 error gyp info spawn args '--generator-output',
+252 error gyp info spawn args 'build',
+252 error gyp info spawn args '-Goutput_dir=.'
+252 error gyp info spawn args ]
+252 error gyp info ok 
+252 error gyp info it worked if it ends with ok
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info spawn make
+252 error gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+252 error gyp http GET https://nodejs.org/download/release/v20.19.0/SHASUMS256.txt
+252 error gyp http 200 https://nodejs.org/download/release/v20.19.0/SHASUMS256.txt
+252 error gyp info spawn /usr/bin/python3
+252 error gyp info spawn args [
+252 error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+252 error gyp info spawn args 'binding.gyp',
+252 error gyp info spawn args '-f',
+252 error gyp info spawn args 'make',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/data/node_modules/serialport/build/config.gypi',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/usr/local/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+252 error gyp info spawn args '-I',
+252 error gyp info spawn args '/usr/src/node-red/.cache/node-gyp/20.19.0/include/node/common.gypi',
+252 error gyp info spawn args '-Dlibrary=shared_library',
+252 error gyp info spawn args '-Dvisibility=default',
+252 error gyp info spawn args '-Dnode_root_dir=/usr/src/node-red/.cache/node-gyp/20.19.0',
+252 error gyp info spawn args '-Dnode_gyp_dir=/usr/local/lib/node_modules/npm/node_modules/node-gyp',
+252 error gyp info spawn args '-Dnode_lib_file=/usr/src/node-red/.cache/node-gyp/20.19.0/<(target_arch)/node.lib',
+252 error gyp info spawn args '-Dmodule_root_dir=/data/node_modules/serialport',
+252 error gyp info spawn args '-Dnode_engine=v8',
+252 error gyp info spawn args '--depth=.',
+252 error gyp info spawn args '--no-parallel',
+252 error gyp info spawn args '--generator-output',
+252 error gyp info spawn args 'build',
+252 error gyp info spawn args '-Goutput_dir=.'
+252 error gyp info spawn args ]
+252 error gyp info ok 
+252 error gyp info it worked if it ends with ok
+252 error gyp info using node-gyp@10.1.0
+252 error gyp info using node@20.19.0 | linux | arm64
+252 error gyp info spawn make
+252 error gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+252 error ../src/serialport.cpp: In function 'int getIntFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:90:51: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error    90 |   return getValueFromObject(options, key)->ToInt32()->Int32Value();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error In file included from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-primitive.h:11,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-object.h:11,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-array-buffer.h:13,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8.h:24,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:73,
+252 error                  from ../../nan/nan.h:62,
+252 error                  from ../src/./serialport.h:7,
+252 error                  from ../src/serialport.cpp:1:
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'bool getBoolFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:94:53: error: no matching function for call to 'v8::Value::ToBoolean()'
+252 error    94 |   return getValueFromObject(options, key)->ToBoolean()->BooleanValue();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:408:18: note: candidate: 'v8::Local<v8::Boolean> v8::Value::ToBoolean(v8::Isolate*) const'
+252 error   408 |   Local<Boolean> ToBoolean(Isolate* isolate) const;
+252 error       |                  ^~~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:408:18: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'v8::Local<v8::String> getStringFromObj(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:98:52: error: no matching function for call to 'v8::Value::ToString()'
+252 error    98 |   return getValueFromObject(options, key)->ToString();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note: candidate: 'v8::MaybeLocal<v8::String> v8::Value::ToString(v8::Local<v8::Context>) const'
+252 error   370 |   V8_WARN_UNUSED_RESULT MaybeLocal<String> ToString(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'double getDoubleFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:102:52: error: no matching function for call to 'v8::Value::ToNumber()'
+252 error   102 |   return getValueFromObject(options, key)->ToNumber()->NumberValue();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:365:44: note: candidate: 'v8::MaybeLocal<v8::Number> v8::Value::ToNumber(v8::Local<v8::Context>) const'
+252 error   365 |   V8_WARN_UNUSED_RESULT MaybeLocal<Number> ToNumber(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:365:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Open(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:111:47: error: no matching function for call to 'v8::Value::ToString()'
+252 error   111 |   v8::String::Utf8Value path(info[0]->ToString());
+252 error       |                              ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note: candidate: 'v8::MaybeLocal<v8::String> v8::Value::ToString(v8::Local<v8::Context>) const'
+252 error   370 |   V8_WARN_UNUSED_RESULT MaybeLocal<String> ToString(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:118:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   118 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:127:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct OpenBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   127 |   memset(baton, 0, sizeof(OpenBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:66:8: note: 'struct OpenBaton' declared here
+252 error    66 | struct OpenBaton {
+252 error       |        ^~~~~~~~~
+252 error ../src/serialport.cpp:141:99: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   141 |   v8::Local<v8::Object> platformOptions = getValueFromObject(options, "platformOptions")->ToObject();
+252 error       |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:152:51: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   152 |   uv_queue_work(uv_default_loop(), req, EIO_Open, (uv_after_work_cb)EIO_AfterOpen);
+252 error       |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterOpen(uv_work_t*)':
+252 error ../src/serialport.cpp:174:30: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   174 |     int fd = argv[1]->ToInt32()->Int32Value();
+252 error       |              ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:180:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   180 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Update(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:193:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   193 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:200:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   200 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:214:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct ConnectionOptionsBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   214 |   memset(baton, 0, sizeof(ConnectionOptionsBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:90:8: note: 'struct ConnectionOptionsBaton' declared here
+252 error    90 | struct ConnectionOptionsBaton {
+252 error       |        ^~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:217:115: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   217 |   baton->baudRate = Nan::Get(options, Nan::New<v8::String>("baudRate").ToLocalChecked()).ToLocalChecked()->ToInt32()->Int32Value();
+252 error       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:223:53: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   223 |   uv_queue_work(uv_default_loop(), req, EIO_Update, (uv_after_work_cb)EIO_AfterUpdate);
+252 error       |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterUpdate(uv_work_t*)':
+252 error ../src/serialport.cpp:240:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   240 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Write(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:252:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   252 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:259:51: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   259 |   v8::Local<v8::Object> buffer = info[1]->ToObject();
+252 error       |                                  ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:270:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct WriteBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   270 |   memset(baton, 0, sizeof(WriteBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:97:8: note: 'struct WriteBaton' declared here
+252 error    97 | struct WriteBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:279:9: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct QueuedWrite'; use assignment or value-initialization instead [-Wclass-memaccess]
+252 error   279 |   memset(queuedWrite, 0, sizeof(QueuedWrite));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:108:8: note: 'struct QueuedWrite' declared here
+252 error   108 | struct QueuedWrite {
+252 error       |        ^~~~~~~~~~~
+252 error ../src/serialport.cpp:296:68: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   296 |     uv_queue_work(uv_default_loop(), &queuedWrite->req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterWrite(uv_work_t*)':
+252 error ../src/serialport.cpp:321:54: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   321 |     uv_queue_work(uv_default_loop(), req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:339:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   339 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp:345:72: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   345 |     uv_queue_work(uv_default_loop(), &nextQueuedWrite->req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Close(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:368:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct CloseBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   368 |   memset(baton, 0, sizeof(CloseBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:145:8: note: 'struct CloseBaton' declared here
+252 error   145 | struct CloseBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:369:31: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   369 |   baton->fd = info[0]->ToInt32()->Int32Value();
+252 error       |               ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:374:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   374 |   uv_queue_work(uv_default_loop(), req, EIO_Close, (uv_after_work_cb)EIO_AfterClose);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterClose(uv_work_t*)':
+252 error ../src/serialport.cpp:403:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   403 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE List(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:422:51: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   422 |   uv_queue_work(uv_default_loop(), req, EIO_List, (uv_after_work_cb)EIO_AfterList);
+252 error       |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterList(uv_work_t*)':
+252 error ../src/serialport.cpp:465:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   465 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Flush(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:480:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   480 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:490:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct FlushBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   490 |   memset(baton, 0, sizeof(FlushBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:167:8: note: 'struct FlushBaton' declared here
+252 error   167 | struct FlushBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:496:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   496 |   uv_queue_work(uv_default_loop(), req, EIO_Flush, (uv_after_work_cb)EIO_AfterFlush);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterFlush(uv_work_t*)':
+252 error ../src/serialport.cpp:516:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   516 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Set(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:528:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   528 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:535:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   535 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:545:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct SetBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   545 |   memset(baton, 0, sizeof(SetBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:174:8: note: 'struct SetBaton' declared here
+252 error   174 | struct SetBaton {
+252 error       |        ^~~~~~~~
+252 error ../src/serialport.cpp:556:50: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   556 |   uv_queue_work(uv_default_loop(), req, EIO_Set, (uv_after_work_cb)EIO_AfterSet);
+252 error       |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterSet(uv_work_t*)':
+252 error ../src/serialport.cpp:573:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   573 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Drain(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:585:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   585 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:594:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct DrainBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   594 |   memset(baton, 0, sizeof(DrainBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:186:8: note: 'struct DrainBaton' declared here
+252 error   186 | struct DrainBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:600:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   600 |   uv_queue_work(uv_default_loop(), req, EIO_Drain, (uv_after_work_cb)EIO_AfterDrain);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterDrain(uv_work_t*)':
+252 error ../src/serialport.cpp:617:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   617 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: At global scope:
+252 error ../src/serialport.cpp:623:28: warning: unnecessary parentheses in declaration of 'ToParityEnum' [-Wparentheses]
+252 error   623 | SerialPortParity NAN_INLINE(ToParityEnum(const v8::Local<v8::String>& v8str)) {
+252 error       |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:623:28: note: remove parentheses
+252 error   623 | SerialPortParity NAN_INLINE(ToParityEnum(const v8::Local<v8::String>& v8str)) {
+252 error       |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error       |                            -                                                -
+252 error ../src/serialport.cpp:642:30: warning: unnecessary parentheses in declaration of 'ToStopBitEnum' [-Wparentheses]
+252 error   642 | SerialPortStopBits NAN_INLINE(ToStopBitEnum(double stopBits)) {
+252 error       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:642:30: note: remove parentheses
+252 error   642 | SerialPortStopBits NAN_INLINE(ToStopBitEnum(double stopBits)) {
+252 error       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error       |                              -                              -
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:1226:7: warning: cast between incompatible function types from 'void (*)(v8::Handle<v8::Object>)' {aka 'void (*)(v8::Local<v8::Object>)'} to 'node::addon_register_func' {aka 'void (*)(v8::Local<v8::Object>, v8::Local<v8::Value>, void*)'} [-Wcast-function-type]
+252 error  1226 |       (node::addon_register_func) (regfunc),                          \
+252 error       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:1260:3: note: in expansion of macro 'NODE_MODULE_X'
+252 error  1260 |   NODE_MODULE_X(modname, regfunc, NULL, 0)  // NOLINT (readability/null_usage)
+252 error       |   ^~~~~~~~~~~~~
+252 error ../src/serialport.cpp:670:1: note: in expansion of macro 'NODE_MODULE'
+252 error   670 | NODE_MODULE(serialport, init);
+252 error       | ^~~~~~~~~~~
+252 error make: *** [serialport.target.mk:108: Release/obj.target/serialport/src/serialport.o] Error 1
+252 error gyp ERR! build error 
+252 error gyp ERR! stack Error: `make` failed with exit code: 2
+252 error gyp ERR! stack at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:209:23)
+252 error gyp ERR! System Linux 6.6.51+rpt-rpi-v8
+252 error gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "build" "--fallback-to-build" "--module=/data/node_modules/serialport/build/Release/serialport.node" "--module_name=serialport" "--module_path=/data/node_modules/serialport/build/Release"
+252 error gyp ERR! cwd /data/node_modules/serialport
+252 error gyp ERR! node -v v20.19.0
+252 error gyp ERR! node-gyp -v v10.1.0
+252 error gyp ERR! not ok 
+252 error node-pre-gyp ERR! build error 
+252 error node-pre-gyp ERR! stack Error: Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js build --fallback-to-build --module=/data/node_modules/serialport/build/Release/serialport.node --module_name=serialport --module_path=/data/node_modules/serialport/build/Release' (1)
+252 error node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (/data/node_modules/serialport/node_modules/node-pre-gyp/lib/util/compile.js:83:29)
+252 error node-pre-gyp ERR! stack     at ChildProcess.emit (node:events:524:28)
+252 error node-pre-gyp ERR! stack     at maybeClose (node:internal/child_process:1104:16)
+252 error node-pre-gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+252 error node-pre-gyp ERR! System Linux 6.6.51+rpt-rpi-v8
+252 error node-pre-gyp ERR! command "/usr/local/bin/node" "/data/node_modules/serialport/node_modules/.bin/node-pre-gyp" "install" "--fallback-to-build"
+252 error node-pre-gyp ERR! cwd /data/node_modules/serialport
+252 error node-pre-gyp ERR! node -v v20.19.0
+252 error node-pre-gyp ERR! node-pre-gyp -v v0.6.32
+252 error node-pre-gyp ERR! not ok 
+252 error ../src/serialport.cpp: In function 'int getIntFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:90:51: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error    90 |   return getValueFromObject(options, key)->ToInt32()->Int32Value();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error In file included from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-primitive.h:11,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-object.h:11,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-array-buffer.h:13,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8.h:24,
+252 error                  from /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:73,
+252 error                  from ../../nan/nan.h:62,
+252 error                  from ../src/./serialport.h:7,
+252 error                  from ../src/serialport.cpp:1:
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'bool getBoolFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:94:53: error: no matching function for call to 'v8::Value::ToBoolean()'
+252 error    94 |   return getValueFromObject(options, key)->ToBoolean()->BooleanValue();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:408:18: note: candidate: 'v8::Local<v8::Boolean> v8::Value::ToBoolean(v8::Isolate*) const'
+252 error   408 |   Local<Boolean> ToBoolean(Isolate* isolate) const;
+252 error       |                  ^~~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:408:18: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'v8::Local<v8::String> getStringFromObj(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:98:52: error: no matching function for call to 'v8::Value::ToString()'
+252 error    98 |   return getValueFromObject(options, key)->ToString();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note: candidate: 'v8::MaybeLocal<v8::String> v8::Value::ToString(v8::Local<v8::Context>) const'
+252 error   370 |   V8_WARN_UNUSED_RESULT MaybeLocal<String> ToString(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'double getDoubleFromObject(v8::Local<v8::Object>, std::string)':
+252 error ../src/serialport.cpp:102:52: error: no matching function for call to 'v8::Value::ToNumber()'
+252 error   102 |   return getValueFromObject(options, key)->ToNumber()->NumberValue();
+252 error       |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:365:44: note: candidate: 'v8::MaybeLocal<v8::Number> v8::Value::ToNumber(v8::Local<v8::Context>) const'
+252 error   365 |   V8_WARN_UNUSED_RESULT MaybeLocal<Number> ToNumber(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:365:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Open(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:111:47: error: no matching function for call to 'v8::Value::ToString()'
+252 error   111 |   v8::String::Utf8Value path(info[0]->ToString());
+252 error       |                              ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note: candidate: 'v8::MaybeLocal<v8::String> v8::Value::ToString(v8::Local<v8::Context>) const'
+252 error   370 |   V8_WARN_UNUSED_RESULT MaybeLocal<String> ToString(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:370:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:118:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   118 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:127:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct OpenBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   127 |   memset(baton, 0, sizeof(OpenBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:66:8: note: 'struct OpenBaton' declared here
+252 error    66 | struct OpenBaton {
+252 error       |        ^~~~~~~~~
+252 error ../src/serialport.cpp:141:99: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   141 |   v8::Local<v8::Object> platformOptions = getValueFromObject(options, "platformOptions")->ToObject();
+252 error       |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:152:51: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   152 |   uv_queue_work(uv_default_loop(), req, EIO_Open, (uv_after_work_cb)EIO_AfterOpen);
+252 error       |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterOpen(uv_work_t*)':
+252 error ../src/serialport.cpp:174:30: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   174 |     int fd = argv[1]->ToInt32()->Int32Value();
+252 error       |              ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:180:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   180 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Update(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:193:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   193 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:200:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   200 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:214:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct ConnectionOptionsBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   214 |   memset(baton, 0, sizeof(ConnectionOptionsBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:90:8: note: 'struct ConnectionOptionsBaton' declared here
+252 error    90 | struct ConnectionOptionsBaton {
+252 error       |        ^~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:217:115: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   217 |   baton->baudRate = Nan::Get(options, Nan::New<v8::String>("baudRate").ToLocalChecked()).ToLocalChecked()->ToInt32()->Int32Value();
+252 error       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:223:53: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   223 |   uv_queue_work(uv_default_loop(), req, EIO_Update, (uv_after_work_cb)EIO_AfterUpdate);
+252 error       |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterUpdate(uv_work_t*)':
+252 error ../src/serialport.cpp:240:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   240 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Write(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:252:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   252 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:259:51: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   259 |   v8::Local<v8::Object> buffer = info[1]->ToObject();
+252 error       |                                  ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:270:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct WriteBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   270 |   memset(baton, 0, sizeof(WriteBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:97:8: note: 'struct WriteBaton' declared here
+252 error    97 | struct WriteBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:279:9: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct QueuedWrite'; use assignment or value-initialization instead [-Wclass-memaccess]
+252 error   279 |   memset(queuedWrite, 0, sizeof(QueuedWrite));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:108:8: note: 'struct QueuedWrite' declared here
+252 error   108 | struct QueuedWrite {
+252 error       |        ^~~~~~~~~~~
+252 error ../src/serialport.cpp:296:68: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   296 |     uv_queue_work(uv_default_loop(), &queuedWrite->req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterWrite(uv_work_t*)':
+252 error ../src/serialport.cpp:321:54: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   321 |     uv_queue_work(uv_default_loop(), req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:339:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   339 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp:345:72: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   345 |     uv_queue_work(uv_default_loop(), &nextQueuedWrite->req, EIO_Write, (uv_after_work_cb)EIO_AfterWrite);
+252 error       |                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Close(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:368:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct CloseBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   368 |   memset(baton, 0, sizeof(CloseBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:145:8: note: 'struct CloseBaton' declared here
+252 error   145 | struct CloseBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:369:31: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   369 |   baton->fd = info[0]->ToInt32()->Int32Value();
+252 error       |               ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:374:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   374 |   uv_queue_work(uv_default_loop(), req, EIO_Close, (uv_after_work_cb)EIO_AfterClose);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterClose(uv_work_t*)':
+252 error ../src/serialport.cpp:403:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   403 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE List(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:422:51: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   422 |   uv_queue_work(uv_default_loop(), req, EIO_List, (uv_after_work_cb)EIO_AfterList);
+252 error       |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterList(uv_work_t*)':
+252 error ../src/serialport.cpp:465:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   465 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Flush(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:480:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   480 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:490:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct FlushBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   490 |   memset(baton, 0, sizeof(FlushBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:167:8: note: 'struct FlushBaton' declared here
+252 error   167 | struct FlushBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:496:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   496 |   uv_queue_work(uv_default_loop(), req, EIO_Flush, (uv_after_work_cb)EIO_AfterFlush);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterFlush(uv_work_t*)':
+252 error ../src/serialport.cpp:516:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   516 |   data->callback.Call(2, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Set(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:528:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   528 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:535:52: error: no matching function for call to 'v8::Value::ToObject()'
+252 error   535 |   v8::Local<v8::Object> options = info[1]->ToObject();
+252 error       |                                   ~~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note: candidate: 'v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const'
+252 error   382 |   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+252 error       |                                            ^~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:382:44: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:545:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct SetBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   545 |   memset(baton, 0, sizeof(SetBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:174:8: note: 'struct SetBaton' declared here
+252 error   174 | struct SetBaton {
+252 error       |        ^~~~~~~~
+252 error ../src/serialport.cpp:556:50: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   556 |   uv_queue_work(uv_default_loop(), req, EIO_Set, (uv_after_work_cb)EIO_AfterSet);
+252 error       |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterSet(uv_work_t*)':
+252 error ../src/serialport.cpp:573:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   573 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: In function 'Nan::NAN_METHOD_RETURN_TYPE Drain(Nan::NAN_METHOD_ARGS_TYPE)':
+252 error ../src/serialport.cpp:585:28: error: no matching function for call to 'v8::Value::ToInt32()'
+252 error   585 |   int fd = info[0]->ToInt32()->Int32Value();
+252 error       |            ~~~~~~~~~~~~~~~~^~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note: candidate: 'v8::MaybeLocal<v8::Int32> v8::Value::ToInt32(v8::Local<v8::Context>) const'
+252 error   403 |   V8_WARN_UNUSED_RESULT MaybeLocal<Int32> ToInt32(Local<Context> context) const;
+252 error       |                                           ^~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/v8-value.h:403:43: note:   candidate expects 1 argument, 0 provided
+252 error ../src/serialport.cpp:594:9: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct DrainBaton' with no trivial copy-assignment; use value-initialization instead [-Wclass-memaccess]
+252 error   594 |   memset(baton, 0, sizeof(DrainBaton));
+252 error       |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/./serialport.h:186:8: note: 'struct DrainBaton' declared here
+252 error   186 | struct DrainBaton {
+252 error       |        ^~~~~~~~~~
+252 error ../src/serialport.cpp:600:52: warning: cast between incompatible function types from 'void (*)(uv_work_t*)' {aka 'void (*)(uv_work_s*)'} to 'uv_after_work_cb' {aka 'void (*)(uv_work_s*, int)'} [-Wcast-function-type]
+252 error   600 |   uv_queue_work(uv_default_loop(), req, EIO_Drain, (uv_after_work_cb)EIO_AfterDrain);
+252 error       |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp: In function 'void EIO_AfterDrain(uv_work_t*)':
+252 error ../src/serialport.cpp:617:22: warning: 'v8::Local<v8::Value> Nan::Callback::Call(int, v8::Local<v8::Value>*) const' is deprecated [-Wdeprecated-declarations]
+252 error   617 |   data->callback.Call(1, argv);
+252 error       |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+252 error ../../nan/nan.h:1818:3: note: declared here
+252 error  1818 |   Call(int argc, v8::Local<v8::Value> argv[]) const {
+252 error       |   ^~~~
+252 error ../src/serialport.cpp: At global scope:
+252 error ../src/serialport.cpp:623:28: warning: unnecessary parentheses in declaration of 'ToParityEnum' [-Wparentheses]
+252 error   623 | SerialPortParity NAN_INLINE(ToParityEnum(const v8::Local<v8::String>& v8str)) {
+252 error       |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:623:28: note: remove parentheses
+252 error   623 | SerialPortParity NAN_INLINE(ToParityEnum(const v8::Local<v8::String>& v8str)) {
+252 error       |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error       |                            -                                                -
+252 error ../src/serialport.cpp:642:30: warning: unnecessary parentheses in declaration of 'ToStopBitEnum' [-Wparentheses]
+252 error   642 | SerialPortStopBits NAN_INLINE(ToStopBitEnum(double stopBits)) {
+252 error       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error ../src/serialport.cpp:642:30: note: remove parentheses
+252 error   642 | SerialPortStopBits NAN_INLINE(ToStopBitEnum(double stopBits)) {
+252 error       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error       |                              -                              -
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:1226:7: warning: cast between incompatible function types from 'void (*)(v8::Handle<v8::Object>)' {aka 'void (*)(v8::Local<v8::Object>)'} to 'node::addon_register_func' {aka 'void (*)(v8::Local<v8::Object>, v8::Local<v8::Value>, void*)'} [-Wcast-function-type]
+252 error  1226 |       (node::addon_register_func) (regfunc),                          \
+252 error       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+252 error /usr/src/node-red/.cache/node-gyp/20.19.0/include/node/node.h:1260:3: note: in expansion of macro 'NODE_MODULE_X'
+252 error  1260 |   NODE_MODULE_X(modname, regfunc, NULL, 0)  // NOLINT (readability/null_usage)
+252 error       |   ^~~~~~~~~~~~~
+252 error ../src/serialport.cpp:670:1: note: in expansion of macro 'NODE_MODULE'
+252 error   670 | NODE_MODULE(serialport, init);
+252 error       | ^~~~~~~~~~~
+252 error make: *** [serialport.target.mk:108: Release/obj.target/serialport/src/serialport.o] Error 1
+252 error gyp ERR! UNCAUGHT EXCEPTION 
+252 error gyp ERR! stack Error: ENOENT: no such file or directory, lstat '/data/node_modules/serialport/build/node_gyp_bins'
+252 error gyp ERR! System Linux 6.6.51+rpt-rpi-v8
+252 error gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "build" "--fallback-to-build" "--module=/data/node_modules/serialport/build/Release/serialport.node" "--module_name=serialport" "--module_path=/data/node_modules/serialport/build/Release"
+252 error gyp ERR! cwd /data/node_modules/serialport
+252 error gyp ERR! node -v v20.19.0
+252 error gyp ERR! node-gyp -v v10.1.0
+252 error gyp ERR! Node-gyp failed to build your package.
+252 error gyp ERR! Try to update npm and/or node-gyp and if it does not help file an issue with the package author.
+253 silly unfinished npm timer reify 1742976553763
+254 silly unfinished npm timer reify:build 1742976563774
+255 silly unfinished npm timer build 1742976563775
+256 silly unfinished npm timer build:deps 1742976563776
+257 silly unfinished npm timer build:run:install 1742976563825
+258 silly unfinished npm timer build:run:install:node_modules/serialport 1742976563825
+259 verbose cwd /data
+260 verbose os Linux 6.6.51+rpt-rpi-v8
+261 verbose node v20.19.0
+262 verbose npm  v10.8.2
+263 verbose exit 1
+264 verbose code 1
+265 error A complete log of this run can be found in: /data/.npm/_logs/2025-03-26T08_09_12_590Z-debug-0.log

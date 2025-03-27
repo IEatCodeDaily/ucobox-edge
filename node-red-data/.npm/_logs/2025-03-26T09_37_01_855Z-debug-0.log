@@ -1,0 +1,25 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove node-red-node-serialport
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "node-red-node-serialport"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-03-26T09_37_01_855Z-
+10 verbose logfile /data/.npm/_logs/2025-03-26T09_37_01_855Z-debug-0.log
+11 silly packumentCache heap:2038431744 maxSize:509607936 maxEntrySize:254803968
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly reify mark retired [ '/data/node_modules/node-red-node-serialport' ]
+15 silly reify moves {
+15 silly reify   '/data/node_modules/node-red-node-serialport': '/data/node_modules/.node-red-node-serialport-wCHeGEr1'
+15 silly reify }
+16 silly REMOVE node_modules/node-red-node-serialport
+17 verbose cwd /data
+18 verbose os Linux 6.6.51+rpt-rpi-v8
+19 verbose node v20.19.0
+20 verbose npm  v10.8.2
+21 verbose exit 0
+22 info ok
