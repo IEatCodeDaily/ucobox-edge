@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  node-red:
+    image: nodered/node-red:latest-debian
+    container_name: node-red
+    restart: unless-stopped
+    user: "root"
+    volumes:
+      - ./node-red-data:/data
+    ports:
+      - "1880:1880"
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0 # Assuming USB UART adapter is at ttyUSB0
+    environment:
+      - TZ=UTC
+    networks:
+      - iot-network
+    depends_on:
+      - mosquitto
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    volumes:
+      - ./mosquitto-config:/mosquitto/config
+      - ./mosquitto-data:/mosquitto/data
+      - ./mosquitto-log:/mosquitto/log
+    ports:
+      - "1883:1883" # MQTT
+      - "9001:9001" # WebSockets
+    networks:
+      - iot-network
+
+  mqtt-explorer:
+    image: smeagolworms4/mqtt-explorer
+    ports:
+      - "4000:4000"
+    environment:
+      - MQTT_CONNECTION_HOST=mosquitto
+      - MQTT_CONNECTION_PORT=1883
+      - HTTP_PORT=4000
+    depends_on:
+      - mosquitto
+    networks:
+      - iot-network
+
+networks:
+  iot-network:
+    driver: bridge
