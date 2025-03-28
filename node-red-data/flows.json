@@ -38,6 +38,37 @@
         "showLogs": true
     },
     {
+        "id": "83a2b8a5d3234b56",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "f23c53b47dfbe38f",
         "type": "modbus-read",
         "z": "f5dcf66848698924",
@@ -51,7 +82,7 @@
         "dataType": "Coil",
         "adr": "0",
         "quantity": "1",
-        "rate": "100",
+        "rate": "500",
         "rateUnit": "ms",
         "delayOnStart": false,
         "startDelayTime": "",
@@ -60,11 +91,12 @@
         "ioFile": "",
         "useIOForPayload": false,
         "emptyMsgOnFail": true,
-        "x": 460,
+        "x": 360,
         "y": 460,
         "wires": [
             [
-                "2ad946f4d14e39ec"
+                "aab1ab143f087181",
+                "3146f293638ec347"
             ],
             []
         ]
@@ -74,7 +106,7 @@
         "type": "debug",
         "z": "f5dcf66848698924",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -82,8 +114,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 380,
+        "x": 760,
+        "y": 260,
         "wires": []
     },
     {
@@ -182,7 +214,7 @@
         "dataType": "HoldingRegister",
         "adr": "0",
         "quantity": "2",
-        "rate": "100",
+        "rate": "1000",
         "rateUnit": "ms",
         "delayOnStart": false,
         "startDelayTime": "",
@@ -191,11 +223,11 @@
         "ioFile": "",
         "useIOForPayload": false,
         "emptyMsgOnFail": true,
-        "x": 420,
-        "y": 360,
+        "x": 200,
+        "y": 380,
         "wires": [
             [
-                "2ad946f4d14e39ec"
+                "split-data"
             ],
             []
         ]
@@ -214,7 +246,7 @@
         "dataType": "InputRegister",
         "adr": "0",
         "quantity": "1",
-        "rate": "100",
+        "rate": "500",
         "rateUnit": "ms",
         "delayOnStart": false,
         "startDelayTime": "",
@@ -227,9 +259,143 @@
         "y": 280,
         "wires": [
             [
-                "2ad946f4d14e39ec"
+                "2ad946f4d14e39ec",
+                "e005c98ba830dd0d"
             ],
             []
+        ]
+    },
+    {
+        "id": "e9c01a2ac3b3ded1",
+        "type": "debug",
+        "z": "f5dcf66848698924",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "aab1ab143f087181",
+        "type": "debug",
+        "z": "f5dcf66848698924",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e005c98ba830dd0d",
+        "type": "mqtt out",
+        "z": "f5dcf66848698924",
+        "name": "Pub MQ2",
+        "topic": "submodule1/sensor/mq2",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "83a2b8a5d3234b56",
+        "x": 760,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d980c32801930462",
+        "type": "mqtt out",
+        "z": "f5dcf66848698924",
+        "name": "Pub Device Info",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "83a2b8a5d3234b56",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5485fa1f20663c3c",
+        "type": "mqtt out",
+        "z": "f5dcf66848698924",
+        "name": "Pub LED",
+        "topic": "submodule1/actuator/led",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "83a2b8a5d3234b56",
+        "x": 760,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "split-data",
+        "type": "function",
+        "z": "f5dcf66848698924",
+        "name": "Split Array to Topics",
+        "func": "// Parse the input if it's a string\nlet data = msg.payload;\nif (typeof data === 'string') {\n    try {\n        data = JSON.parse(data);\n    } catch(e) {\n        node.error(\"Failed to parse input data: \" + e.message);\n        return null;\n    }\n}\n\n// Check if the data is an array with at least 2 elements\nif (!Array.isArray(data) || data.length < 2) {\n    node.error(\"Input is not a valid array with at least 2 elements\");\n    return null;\n}\n\n// Create messages for each topic\nreturn [\n    { topic: \"submodule1/info/threshold\", payload: [data[0]] },\n    { topic: \"submodule1/info/firmware\", payload: [data[1]] }\n];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 400,
+        "wires": [
+            [
+                "d980c32801930462",
+                "e9c01a2ac3b3ded1"
+            ],
+            [
+                "e9c01a2ac3b3ded1",
+                "d980c32801930462"
+            ]
+        ]
+    },
+    {
+        "id": "3146f293638ec347",
+        "type": "function",
+        "z": "f5dcf66848698924",
+        "name": "function 1",
+        "func": "// Parse the input if it's a string\nlet data = msg.payload;\nif (typeof data === 'string') {\n    try {\n        data = JSON.parse(data);\n    } catch(e) {\n        node.error(\"Failed to parse input data: \" + e.message);\n        return null;\n    }\n}\n\n// Check if the data is an array with at least 2 elements\nif (!Array.isArray(data) || data.length < 2) {\n    node.error(\"Input is not a valid array with at least 2 elements\");\n    return null;\n}\n\n// Create messages for each topic\nreturn [\n    { topic: \"submodule1/actuator/led\", payload: [data[0]] }\n];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 480,
+        "wires": [
+            [
+                "5485fa1f20663c3c"
+            ]
         ]
     }
 ]

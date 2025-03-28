@@ -5,7 +5,7 @@ services:
     image: nodered/node-red:latest-debian
     container_name: node-red
     restart: unless-stopped
-    user: "1000:1000" # Use Pi user's UID:GID for permissions
+    user: "root"
     volumes:
       - ./node-red-data:/data
     ports:
@@ -23,7 +23,6 @@ services:
     image: eclipse-mosquitto:latest
     container_name: mosquitto
     restart: unless-stopped
-    user: "1000:1000" # Use Pi user's UID:GID for permissions
     volumes:
       - ./mosquitto-config:/mosquitto/config
       - ./mosquitto-data:/mosquitto/data
@@ -34,16 +33,18 @@ services:
     networks:
       - iot-network
 
-  mqtt-dashboard:
-    image: emqx/mqttx-web:latest
-    container_name: mqtt-dashboard
-    restart: unless-stopped
+  mqtt-explorer:
+    image: smeagolworms4/mqtt-explorer
     ports:
-      - "8080:80"
-    networks:
-      - iot-network
+      - "4000:4000"
+    environment:
+      - MQTT_CONNECTION_HOST=mosquitto
+      - MQTT_CONNECTION_PORT=1883
+      - HTTP_PORT=4000
     depends_on:
       - mosquitto
+    networks:
+      - iot-network
 
 networks:
   iot-network:
